@@ -1,0 +1,14 @@
+        h1,h2,h3,p,table,label{ color: aliceblue;}
+        body,html {
+            width:100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(to bottom, #020208 0%, #1a1a40 100%);
+            }
+#bannerDegrade {
+width: 30%;
+height: 150px;
+
+ background: linear-gradient(darkslateblue,darkblue);
+}
