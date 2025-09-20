@@ -1,11 +1,14 @@
-        h1,h2,h3{ 
-            text-align: center;}
-            p, label {
+h1,h2,h3{ 
+font-family: 'Orbitron',sans-serif;
+text-align: center;
+}
+p, label {
   text-align: center;
   display: block;
   margin: 10px auto;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-    img {
+img {
   display: block;
   margin: 0 auto;
 }
@@ -39,18 +42,34 @@ input, button {
   background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
   z-index: -1; /* Se queda detrás del contenido */
 }
-#bannerDegrade {
-width: 30%;
-height: 150px;
+.bannerDegrade {
+width: 100%;
+height: 400px;
 
  background: linear-gradient(darkslateblue,darkblue);
 }
 .bannerTitulos{
     width: 100%;
     height: 50px;
-    background-color: grey;
+    background-color: rgba(70, 69, 69, 0.329);
 }
 .imagenesRedes{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+}
+.cuadroDescripcion {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: rgba(22, 1, 1, 0.644); /* fondo semitransparente si tenés gif detrás */
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  backdrop-filter: blur(5px); /* efecto glass si querés más estilo */
+}
+.tablaOrdenada{
+    margin:0 auto; text-align: center;
 }

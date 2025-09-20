@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="icon" href="favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,19 +22,41 @@
          abajo proyectos que tenga hechos(poner links a github)
          Links a mis redes sociales de contacto o para mostrar cosas relacionadas
          esto ultimo seria el footer-->
-         
-        <h1>Iglesias Gonzalo Agustin🚀</h1>
+        <div class="bannerTitulos"><h1>Iglesias Gonzalo Agustin🚀</h1></div>
         <div>
     <!--Titulo,foto, nombre y bienvenida-->
-        <img width="16%" height="250px" src="fotoperfil1.png" alt="FotoPerfil">
-            <h2>Bienvenidos a mi Primer Portfolio</h2>
-        <p >Buenas soy Gonzalo,les presento mi primer Portfolio,aqui van a encontrar algunos proyectos, 
+        <img width="16%" height="250px" src="fotoperfil1.png" alt="FotoPerfil">    
+        <div class="cuadroDescripcion">
+        <h2>Bienvenidos a mi Primer Portfolio</h2>
+        <p>Buenas soy Gonzalo,les presento mi primer Portfolio,aqui van a encontrar algunos proyectos, 
         links a mis redes sociales,contacto y un apartado para dejar su consulta personalizada.</p>
-        </div>
+    </div>    
+    </div>
     </header>
-    <p>Aca tendria que ir poniendo todo lo que escribi
-        vamos a ver como queda en este ejemplo
+    <div class="cuadroDescripcion">
+    <h2>Acerca de mi</h2>
+     <p> Buenas genteS<!--solo para entendidos de programacion en frgp-->,Tengo 25 años,estudie para ser Técnico Informático en la secundaria(egrese en 2018). 
+        Actualmente trabajo como soporte IT en el Hospital de Escobar, donde aplico y refuerzo mis conocimientos técnicos día a día.
+        Estoy cursando la Tecnicatura Superior en Programación(a 1 año de recibirme) en la UTN FRGP, y en el proceso descubrí que me apasiona el desarrollo front-end.
+        Tengo conocimientos básicos en HTML y CSS, además un poco de experiencia en SQL, C# y .NET. Mi objetivo es seguir creciendo y formarme como desarrollador full stack en un futuro cercano.
     </p>
+    </div>
+    <div class="bannerDegrade">
+        <h2>Conocimientos</h2>
+        <p>EStos son algunos de los conocimientos que poseo</p>
+        <table class="tablaOrdenada">
+                    <tr></tr>
+                        <td><img class="imagenesRedes" src="https://w7.pngwing.com/pngs/240/85/png-transparent-c-thumbnail.png " alt="C#"></td>
+                        <td><img class="imagenesRedes" src="" alt="SQL"></td>
+                        <td><img class="imagenesRedes" src="https://logos-world.net/wp-content/uploads/2022/01/NET-Framework-Symbol.png" alt=".NET"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="imagenesRedes" src="https://e7.pngegg.com/pngimages/185/866/png-clipart-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle.png" alt="HTML"></td>
+                        <td><img class="imagenesRedes" src="https://e7.pngegg.com/pngimages/603/759/png-clipart-css3-cascading-style-sheets-logo-html-world-wide-web-blue-angle-thumbnail.png" alt="CSS"></td>
+                        <td><img class="imagenesRedes" src="" alt="JS"></td>
+                    </tr>
+            </table>
+    </div>
         <h3>Formulario de contacto</h3>
         <div>
             <Label>Ingrese su nombre y apellido:</Label>
@@ -42,6 +65,7 @@
         <div>
             <Label>Mail/Telefono para contactarme con usted:</Label>
             <input type="text">
+            
         </div>
         <div>
             <Label>Ingrese su consulta</Label>
@@ -55,7 +79,7 @@
         <footer>
             <div> 
         <h2 class="bannerTitulos">Tambien podes encontrarme en: </h2>
-        <table style="margin:0 auto; text-align: center;">
+        <table class="tablaOrdenada">
             <tr> 
                 <td><img  class="imagenesRedes" src="https://static.vecteezy.com/system/resources/thumbnails/006/827/459/small/email-icon-sign-symbol-logo-vector.jpg" alt="Email"></td>
                 <td><img  class="imagenesRedes" src="https://logoeps.com/wp-content/uploads/2025/02/LinkedIn-logo--200x200.png" alt="Linkedin"></td>
