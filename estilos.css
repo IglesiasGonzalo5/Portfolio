@@ -23,7 +23,7 @@ input, button {
   max-width: 400px;
 }
         body{
-            background-image: url('imagenes/BannerPortfolio2.gif'); 
+            background-image: url('BannerPortfolio2.gif'); 
             background-size: cover;            
             background-repeat: no-repeat;       
             background-attachment: fixed;       
@@ -53,4 +53,5 @@ height: 150px;
 .imagenesRedes{
     width: 100px;
     height: 100px;
+
 }
