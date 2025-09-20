@@ -44,7 +44,7 @@ input, button {
 }
 .bannerDegrade {
 width: 100%;
-height: 400px;
+height: 300px;
 
  background: linear-gradient(darkslateblue,darkblue);
 }
@@ -54,8 +54,8 @@ height: 400px;
     background-color: rgba(70, 69, 69, 0.329);
 }
 .imagenesRedes{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 .cuadroDescripcion {
   max-width: 700px;
