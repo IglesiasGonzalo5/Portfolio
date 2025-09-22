@@ -9,19 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        function Enviarcorreo(){
+            var usuario = document.getElementById("NombreUsuario").value;
+            var mailUsuario = document.getElementById("ContactoUsuario").value;
+            var Consulta = document.getElementById("ConsultaUsuario").value;
+            if(NombreUsuario != ""){
+                alert("Por favor,ingrese su nombre");
+            }
+            if(ConsultaUsuario != ""){
+                alert("Por favor,Ingrese su consulta")
+            }
+            alert("Consulta enviada con exito");
+        }
+    </script>
 
     <header>
-        <!-- Aca va a ir la imagen tipo banner a lo largo
-         mi nombre en el medio junto con algun emoji
-         Abajo va a empezar el cuerpo con una intro de lo que
-         estoy haciendo y que es lo que se ve
-         luego va un acerca de mi con una vebre intro mia
-         quien soy,que hago,que estudio,desde cuando o hace cuanto.Cursos hechos,conocimientos
-         Despues unos conocimientos tecnicos o de programacion,poner imagencitas.
-         Estudios hechos: secundaria y universidad
-         abajo proyectos que tenga hechos(poner links a github)
-         Links a mis redes sociales de contacto o para mostrar cosas relacionadas
-         esto ultimo seria el footer-->
+       
         <div class="bannerTitulos"><h1>Iglesias Gonzalo Agustin🚀</h1></div>
         <div>
     <!--Titulo,foto, nombre y bienvenida-->
@@ -40,10 +44,11 @@
         Estoy cursando la Tecnicatura Superior en Programación(a 1 año de recibirme) en la UTN FRGP, y en el proceso descubrí que me apasiona el desarrollo front-end.
         Tengo conocimientos básicos en HTML y CSS, además un poco de experiencia en SQL, C# y .NET. Mi objetivo es seguir creciendo y formarme como desarrollador full stack en un futuro cercano.
     </p>
-    </div>
+    </div>0
+    <!--Conocimientos-->
     <div class="bannerDegrade">
         <h2>Conocimientos</h2>
-        <p>EStos son algunos de los conocimientos que poseo</p>
+        <p>Estos son algunos de los conocimientos que poseo</p>
         <table class="tablaOrdenada">
                     <tr></tr>
                         <td><img class="imagenesRedes" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg" alt="C#"></td>
@@ -57,40 +62,58 @@
                     </tr>
             </table>
     </div>
-        <h3>Formulario de contacto</h3>
-        <div>
-            <Label>Ingrese su nombre y apellido:</Label>
-            <input type="text">
-        </div>
-        <div>
-            <Label>Mail/Telefono para contactarme con usted:</Label>
-            <input type="text">
-            
-        </div>
-        <div>
-            <Label>Ingrese su consulta</Label>
-            <input type="text">
-        </div>
-        <div>
-            <button>Enviar consulta</button>
-        </div>
+    <!--Proyectos-->
+    <div class="proyectos">
+  <h2>Proyectos Realizados</h2>
+  <div class="grid-proyectos">
+    <div class="proyecto">
+      <h3>Gestión de ferretería</h3>
+      <img src="GestionFerreteria.PNG" alt="GestionFerreteria">
+      <p>Programa hecho en C++ para sistematizar procesos de alta, baja y modificación de artículos, compras y ventas.</p>
+    </div>
+    <div class="proyecto">
+      <h3>Listado de artículos</h3>
+      <img src="ListadoArticulos.PNG" alt="ListadoArticulos">
+      <p>Proyecto en C# y SQL que permite gestionar artículos, marcas y categorías conectándose a una base de datos.</p>
+    </div>
+    <div class="proyecto">
+      <h3>Bloqueado</h3>
+      <img src="" alt="Bloqueado">
+      <p>Completa el capitulo "Obtuve mi titulo" en el modo historia</p>
+    </div>
+    <div class="proyecto">
+      <h3>Bloqueado</h3>
+      <img src="" alt="Bloqueado">
+      <p>Completa el capitulo "Trabajo en grupo" en el modo multiplayer</p>
+    </div>
+  </div>
+</div>
+<!--Contacto-->
+        <div class="formulario-contacto">
+  <h4>Formulario de contacto</h4>
+  <form action="#" method="post">
+    <label for="nombre">Ingrese su nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
+    <label for="contacto">Email o Teléfono:</label>
+    <input type="text" id="contacto" name="contacto" required>
 
-        <footer>
+    <label for="consulta">Ingrese su consulta:</label>
+    <textarea id="consulta" name="consulta" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
             <div> 
         <h2 class="bannerTitulos">Tambien podes encontrarme en: </h2>
         <table class="tablaOrdenada">
             <tr> 
-                <td><img  class="imagenesRedes" src="https://static.vecteezy.com/system/resources/thumbnails/006/827/459/small/email-icon-sign-symbol-logo-vector.jpg" alt="Email"></td>
                 <td><img  class="imagenesRedes" src="https://logoeps.com/wp-content/uploads/2025/02/LinkedIn-logo--200x200.png" alt="Linkedin"></td>
                 <td><img  class="imagenesRedes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3p9u1IuwTXatDz-2rmmMnCQbCFBZ1hTmNA&s" alt="github"></td>
-                <td><img  class="imagenesRedes" src="https://img.freepik.com/vector-premium/icono-instagram_768467-672.jpg?semt=ais_incoming&w=740&q=80" alt="Instagram"></td>
             </tr>
             <tr>
-                <td>Email</td>
                 <td><a href="https://www.linkedin.com/in/gonzalo-iglesias-b7b387248" target="_blank">Linkedin</a></td>
                 <td><a href="https://github.com/IglesiasGonzalo5" target="_blank">Github</a></td>
-                <td>Instagram laboral</td>
             </tr>
         </table>
         </div>
