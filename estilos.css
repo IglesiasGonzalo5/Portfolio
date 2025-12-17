@@ -140,3 +140,7 @@ height: 300px;
 .formulario-contacto button:hover {
   background-color: #0097a7;
 }
+
+i {
+    font-size: 85px;
+}
